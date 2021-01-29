@@ -1,0 +1,61 @@
+
+<div>
+
+
+  <form [formGroup]="bookForm" (ngSubmit)="createUser()">
+    <div class="mt-5 box">
+      <div class="form-row">
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="text" formControlName="id" placeholder="Input ID " hidden>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>First Name</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="text" formControlName="title" placeholder="Input Book Title">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Last Name</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="text" formControlName="author" placeholder="Input Book Author">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Last Name</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="text" formControlName="description" placeholder="Input Book Descripion">
+            </div>
+          </div>
+        </div>
+
+
+
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary" (click)="createUser()">SAVE</button>
+          </div>
+        </div>
+      </div>
+  </form>
+</div>
+
+
+
+
+
